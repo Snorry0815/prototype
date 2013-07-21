@@ -12,8 +12,8 @@ public class SpawnUnitAction : BasicAction {
 		_unitType = unitType;		
 	}
 		
-	public void Trigger(Vector3 startPoint, Vector2 distance) {
-		_unitType.GetComponent<BasicUnit>().Spawn(startPoint,distance);
+	public void Trigger(int player, Vector3 startPoint, Vector2 distance) {
+		_unitType.GetComponent<BasicUnit>().Spawn(player,startPoint,distance);
 	}
 }
 	

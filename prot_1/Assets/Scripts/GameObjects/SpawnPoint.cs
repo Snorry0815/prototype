@@ -42,6 +42,7 @@ public class SpawnPoint : MonoBehaviour {
 		this.gameObject.AddComponent("MeshFilter");
 		this.gameObject.AddComponent("MeshRenderer");
 		this.gameObject.AddComponent("MeshCollider");
+		this.gameObject.GetComponent<MeshCollider>().isTrigger = true;
 			
 		Mesh mesh = new Mesh();
 		this.gameObject.GetComponent<MeshFilter>().mesh = mesh;

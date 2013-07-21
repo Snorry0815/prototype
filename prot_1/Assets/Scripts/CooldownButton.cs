@@ -122,7 +122,7 @@ public class CooldownButton {
 		GameState.Instance().ActivatedSelectedButton(this,_player);
 		_state = State.COOLDOWN;
 		_timeInCoolDown = 0f;
-		_action.Trigger(startPoint,distance);
+		_action.Trigger(_player,startPoint,distance);
 		Debug.Log("Activated!");
 	}
 	

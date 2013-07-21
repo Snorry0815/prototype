@@ -63,7 +63,7 @@ public class Arena {
 		floor.name = "Floor";
 		floor.AddComponent("MeshFilter");
 		floor.AddComponent("MeshRenderer");
-		floor.AddComponent("MeshCollider");
+		//floor.AddComponent("MeshCollider");
 			
 		Mesh mesh = new Mesh();
 		floor.GetComponent<MeshFilter>().mesh = mesh;
@@ -73,7 +73,7 @@ public class Arena {
 	    mesh.triangles = triangles;
 		mesh.RecalculateNormals();	
 		
-		floor.GetComponent<MeshCollider>().sharedMesh = mesh;
+		//floor.GetComponent<MeshCollider>().sharedMesh = mesh;
 		
 		floor.GetComponent<MeshRenderer>().material.SetTexture("_MainTex",_floorTexture);
 		

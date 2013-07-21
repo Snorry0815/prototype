@@ -22,6 +22,7 @@ public class Level_1 : MonoBehaviour {
 		arena.Load();
 		
 		CreateSpawnPoints();
+		CreateDespawnArea();
 	}
 	
 	private void CreateSpawnPoints() {
@@ -49,5 +50,10 @@ public class Level_1 : MonoBehaviour {
 			posZ -= steps;
 		}
 		
+	}
+	
+	private void CreateDespawnArea() {
+		DespawnArea.CreateDespawnArea(0,-23,40f);
+		DespawnArea.CreateDespawnArea(1,23,40f);
 	}
 }
