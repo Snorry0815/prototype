@@ -44,8 +44,20 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Actions\CooldownButtonActions\BasicAction.cs" />
+     <Compile Include="Assets\Scripts\Actions\CooldownButtonActions\SpawnUnitAction.cs" />
+     <Compile Include="Assets\Scripts\Col.cs" />
      <Compile Include="Assets\Scripts\CooldownButton.cs" />
+     <Compile Include="Assets\Scripts\GameLoop.cs" />
+     <Compile Include="Assets\Scripts\GameObjects\Arena.cs" />
+     <Compile Include="Assets\Scripts\GameObjects\BasicUnit.cs" />
+     <Compile Include="Assets\Scripts\GameObjects\SpawnPoint.cs" />
+     <Compile Include="Assets\Scripts\GameState\Definitions.cs" />
+     <Compile Include="Assets\Scripts\GameState\GameState.cs" />
+     <Compile Include="Assets\Scripts\GameState\PlayerState.cs" />
+     <Compile Include="Assets\Scripts\Level_1.cs" />
      <Compile Include="Assets\Scripts\Menu_1.cs" />
+     <Compile Include="Assets\Scripts\SpawnUnit.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
