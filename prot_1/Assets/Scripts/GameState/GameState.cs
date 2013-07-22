@@ -8,6 +8,7 @@ public class GameState {
 	private static GameState _gameState = null;	
 		
 	private PlayerState[] _players;
+	private Menu_1 _menu;	
 		
 	private GameState() {
 		_players = new PlayerState[2];
@@ -46,6 +47,15 @@ public class GameState {
 	public void MouseUp() {
 		_players[0].MouseUp();
 		_players[1].MouseUp();	
+	}
+		
+	public void SetMenu(Menu_1 menu) {
+		_menu = menu;	
+	}
+		
+	public void Scored(int player) {
+		_players[player].Scored();
+		_menu.SetScore(_players[0].GetScore() + ":" + _players[1].GetScore());
 	}
 }
 	

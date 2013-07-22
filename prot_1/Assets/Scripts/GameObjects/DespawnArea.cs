@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
+using com.prototype.gamestate;
+
 public class DespawnArea : MonoBehaviour {
 	
 	private int _owner;
@@ -26,6 +28,7 @@ public class DespawnArea : MonoBehaviour {
 	public void OnTriggerEnter(Collider collider) {
 		BasicUnit bs = collider.gameObject.GetComponent<BasicUnit>();
 		if(bs != null && !bs.IsOwner(_owner)) {
+			GameState.Instance().Scored(bs.GetOwner());
 			Destroy(collider.gameObject);
 		}
 	}

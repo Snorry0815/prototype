@@ -6,6 +6,7 @@ public class PlayerState {
 	private GameObject _spawnPoint = null;
 	private Vector2 _distance;
 	private bool _targeted = false;
+	private int _score = 0;
 	
 	public PlayerState() {
 	
@@ -62,4 +63,11 @@ public class PlayerState {
 		}
 	}
 	
+	public void Scored() {
+		++_score;	
+	}
+	
+	public int GetScore() {
+		return _score;	
+	}
 }
