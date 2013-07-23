@@ -46,6 +46,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Actions\CooldownButtonActions\BasicAction.cs" />
      <Compile Include="Assets\Scripts\Actions\CooldownButtonActions\SpawnUnitAction.cs" />
+     <Compile Include="Assets\Scripts\Animations\SpriteAnimation.cs" />
+     <Compile Include="Assets\Scripts\Animations\SpriteAnimationObject.cs" />
+     <Compile Include="Assets\Scripts\Animations\SpriteAnimationSequence.cs" />
+     <Compile Include="Assets\Scripts\Animations\SpriteAnimationTypes.cs" />
      <Compile Include="Assets\Scripts\Col.cs" />
      <Compile Include="Assets\Scripts\CooldownButton.cs" />
      <Compile Include="Assets\Scripts\GameLoop.cs" />

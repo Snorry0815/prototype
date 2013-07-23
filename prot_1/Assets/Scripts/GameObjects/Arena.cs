@@ -46,8 +46,8 @@ public class Arena {
 		vertices[2] = new Vector3(_x+_width,floorY,_z+_depth);
 		vertices[3] = new Vector3(_x+_width,floorY,_z);
 		
-		uv[0] = new Vector2(1,1);
-		uv[1] = new Vector2(1,0);
+		uv[0] = new Vector2(2,1);
+		uv[1] = new Vector2(2,0);
 		uv[2] = new Vector2(0,0);
 		uv[3] = new Vector2(0,1);
 		
